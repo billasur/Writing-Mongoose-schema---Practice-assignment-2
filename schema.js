@@ -52,7 +52,4 @@ const blogPostSchema = new mongoose.Schema(
     }
 )
 
-module.exports = {
-    Blogpost: mongoose.model("Blogpost", blogPostSchema),
-    Comment: mongoose.model("Comment", commentSchema),
-};
+module.exports = mongoose.model("Blogpost", blogPostSchema);
